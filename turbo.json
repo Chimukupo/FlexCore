@@ -1,0 +1,10 @@
+{
+  "pipeline": {
+    "build": { "dependsOn": ["^build"], "outputs": ["dist/**"] },
+    "lint": { "dependsOn": ["^lint"] },
+    "typecheck": { "dependsOn": ["^typecheck"] },
+    "test": { "dependsOn": ["^build"] },
+    "e2e": { "dependsOn": ["build"] },
+    "build-storybook": { "dependsOn": ["build"] }
+  }
+}
