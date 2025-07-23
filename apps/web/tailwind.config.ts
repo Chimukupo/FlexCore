@@ -4,7 +4,7 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
   content: [
     "./index.html",
-    "./src/**/*.{ts,tsx}", // include .ts and .tsx for React/TS
+    "./src/**/*.{js,ts,jsx,tsx}", // include .ts and .tsx for React/TS
   ],
   theme: {
     extend: {},
