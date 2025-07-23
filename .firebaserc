@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "staging": "flexcore-stage",
+    "prod": "flexcore-prod"
+  },
+  "targets": {
+    "flexcore-prod": {
+      "hosting": {
+        "staging": [
+          "flexcore-stage"
+        ],
+        "prod": [
+          "flexcore-prod"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
