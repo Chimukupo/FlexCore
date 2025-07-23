@@ -7,7 +7,6 @@
   },
   "hosting": [
     {
-      "target": "staging",
       "site": "flexcore-stage",
       "public": "apps/web/dist",
       "ignore": [
@@ -22,8 +21,7 @@
         }
       ]
     },
-    {
-      "target": "prod",
+    {   
       "site": "flexcore-prod",
       "public": "apps/web/dist",
       "ignore": [
