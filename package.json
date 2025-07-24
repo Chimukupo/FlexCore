@@ -16,6 +16,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "turbo": "^2.5.5"
   }
 }

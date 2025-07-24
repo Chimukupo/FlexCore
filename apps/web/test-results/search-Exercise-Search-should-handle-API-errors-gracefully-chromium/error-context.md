@@ -1,0 +1,177 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - heading "FlexCore" [level=1]
+  - paragraph: Exercise Search
+  - text: Welcome, test@example.com
+  - button "Sign Out"
+- main:
+  - heading "Search Exercises" [level=2]
+  - textbox "Search by exercise name": xyztestexercise999
+  - combobox: Select target muscle
+  - combobox: Select equipment
+  - button "Search"
+  - button "Clear Filters"
+  - heading "Found 10 exercises" [level=3]
+  - text: 3/4 sit-up
+  - img "3/4 sit-up"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: body weight
+  - strong: "Secondary:"
+  - text: hip flexors, lower back
+  - strong: "Instructions:"
+  - list:
+    - listitem: Lie flat on your back with your knees bent and feet flat on the ground.
+    - listitem: Place your hands behind your head with your elbows pointing outwards.
+    - listitem: Engaging your abs, slowly lift your upper body off the ground, curling forward until your torso is at a 45-degree angle.
+    - listitem: +2 more steps...
+  - text: 45° side bend
+  - img "45° side bend"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: body weight
+  - strong: "Secondary:"
+  - text: obliques
+  - strong: "Instructions:"
+  - list:
+    - listitem: Stand with your feet shoulder-width apart and your arms extended straight down by your sides.
+    - listitem: Keeping your back straight and your core engaged, slowly bend your torso to one side, lowering your hand towards your knee.
+    - listitem: Pause for a moment at the bottom, then slowly return to the starting position.
+    - listitem: +2 more steps...
+  - text: air bike
+  - img "air bike"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: body weight
+  - strong: "Secondary:"
+  - text: hip flexors
+  - strong: "Instructions:"
+  - list:
+    - listitem: Lie flat on your back with your hands placed behind your head.
+    - listitem: Lift your legs off the ground and bend your knees at a 90-degree angle.
+    - listitem: Bring your right elbow towards your left knee while simultaneously straightening your right leg.
+    - listitem: +2 more steps...
+  - text: alternate heel touchers
+  - img "alternate heel touchers"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: body weight
+  - strong: "Secondary:"
+  - text: obliques
+  - strong: "Instructions:"
+  - list:
+    - listitem: Lie flat on your back with your knees bent and feet flat on the ground.
+    - listitem: Extend your arms straight out to the sides, parallel to the ground.
+    - listitem: Engaging your abs, lift your shoulders off the ground and reach your right hand towards your right heel.
+    - listitem: +2 more steps...
+  - text: alternate lateral pulldown
+  - img "alternate lateral pulldown"
+  - strong: "Body Part:"
+  - text: back
+  - strong: "Target:"
+  - text: lats
+  - strong: "Equipment:"
+  - text: cable
+  - strong: "Secondary:"
+  - text: biceps, rhomboids
+  - strong: "Instructions:"
+  - list:
+    - listitem: Sit on the cable machine with your back straight and feet flat on the ground.
+    - listitem: Grasp the handles with an overhand grip, slightly wider than shoulder-width apart.
+    - listitem: Lean back slightly and pull the handles towards your chest, squeezing your shoulder blades together.
+    - listitem: +2 more steps...
+  - text: assisted chest dip (kneeling)
+  - img "assisted chest dip (kneeling)"
+  - strong: "Body Part:"
+  - text: chest
+  - strong: "Target:"
+  - text: pectorals
+  - strong: "Equipment:"
+  - text: leverage machine
+  - strong: "Secondary:"
+  - text: triceps, shoulders
+  - strong: "Instructions:"
+  - list:
+    - listitem: Adjust the machine to your desired height and secure your knees on the pad.
+    - listitem: Grasp the handles with your palms facing down and your arms fully extended.
+    - listitem: Lower your body by bending your elbows until your upper arms are parallel to the floor.
+    - listitem: +2 more steps...
+  - text: assisted hanging knee raise with throw down
+  - img "assisted hanging knee raise with throw down"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: assisted
+  - strong: "Secondary:"
+  - text: hip flexors, lower back
+  - strong: "Instructions:"
+  - list:
+    - listitem: Hang from a pull-up bar with your arms fully extended and your palms facing away from you.
+    - listitem: Engage your core and lift your knees towards your chest, keeping your legs together.
+    - listitem: Once your knees are at chest level, explosively throw your legs down towards the ground, extending them fully.
+    - listitem: +1 more steps...
+  - text: assisted hanging knee raise
+  - img "assisted hanging knee raise"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: assisted
+  - strong: "Secondary:"
+  - text: hip flexors
+  - strong: "Instructions:"
+  - list:
+    - listitem: Hang from a pull-up bar with your arms fully extended and your palms facing away from you.
+    - listitem: Engage your core muscles and lift your knees towards your chest, bending at the hips and knees.
+    - listitem: Pause for a moment at the top of the movement, squeezing your abs.
+    - listitem: +2 more steps...
+  - text: assisted lying leg raise with lateral throw down
+  - img "assisted lying leg raise with lateral throw down"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: assisted
+  - strong: "Secondary:"
+  - text: hip flexors, obliques
+  - strong: "Instructions:"
+  - list:
+    - listitem: Lie flat on your back with your legs extended and your arms by your sides.
+    - listitem: Place your hands under your glutes for support.
+    - listitem: Engage your abs and lift your legs off the ground, keeping them straight.
+    - listitem: +4 more steps...
+  - text: assisted lying leg raise with throw down
+  - img "assisted lying leg raise with throw down"
+  - strong: "Body Part:"
+  - text: waist
+  - strong: "Target:"
+  - text: abs
+  - strong: "Equipment:"
+  - text: assisted
+  - strong: "Secondary:"
+  - text: hip flexors, quadriceps
+  - strong: "Instructions:"
+  - list:
+    - listitem: Lie flat on your back with your legs extended and your arms by your sides.
+    - listitem: Place your hands under your glutes for support.
+    - listitem: Engage your core and lift your legs off the ground, keeping them straight.
+    - listitem: +5 more steps...
+```

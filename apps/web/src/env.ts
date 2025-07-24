@@ -16,6 +16,7 @@ export const env = createEnv({
     VITE_FIREBASE_MEASUREMENT_ID: z.string(),
     VITE_RAPIDAPI_KEY: z.string(),
     VITE_RAPIDAPI_HOST: z.string(),
+    VITE_TEST_MODE: z.string().optional(),
   },
   runtimeEnv: import.meta.env,
   onValidationError: (error) => {

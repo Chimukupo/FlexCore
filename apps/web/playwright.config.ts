@@ -15,6 +15,9 @@ export default defineConfig({
     baseURL: 'http://localhost:5173',
     trace: 'on-first-retry',
   },
+  env: {
+    VITE_TEST_MODE: 'true',
+  },
   projects: [
     {
       name: 'chromium',

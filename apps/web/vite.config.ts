@@ -24,10 +24,16 @@ export default defineConfig({
       {
         test: {
           name: 'unit',
+          globals: true,
           environment: 'jsdom',
           setupFiles: ['./src/test/setup.ts'],
           include: ['src/**/*.{test,spec}.{js,ts,jsx,tsx}'],
           exclude: ['src/**/*.e2e.{test,spec}.{js,ts,jsx,tsx}'],
+        },
+        resolve: {
+          alias: {
+            '@': path.resolve(dirname, './src'),
+          },
         },
       },
       // Storybook tests configuration

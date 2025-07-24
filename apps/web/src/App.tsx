@@ -1,14 +1,24 @@
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { LoginScreen } from './components/LoginScreen';
 import { SignupScreen } from './components/SignupScreen';
 import { ProfileScreen } from './components/ProfileScreen';
+import SearchScreen from './components/SearchScreen';
 
 type AuthView = 'login' | 'signup';
 
 const AuthenticatedApp = () => {
-  return <ProfileScreen />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SearchScreen />} />
+        <Route path="/profile" element={<ProfileScreen />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 const UnauthenticatedApp = () => {
