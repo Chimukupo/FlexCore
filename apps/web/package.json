@@ -9,7 +9,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "deploy:staging": "firebase deploy --only hosting:flexcore-stage",
+    "deploy:prod": "firebase deploy --only hosting:flexcore-prod"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
