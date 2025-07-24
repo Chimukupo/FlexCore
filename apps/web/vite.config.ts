@@ -20,6 +20,17 @@ export default defineConfig({
   },
   test: {
     projects: [
+      // Unit tests configuration
+      {
+        test: {
+          name: 'unit',
+          environment: 'jsdom',
+          setupFiles: ['./src/test/setup.ts'],
+          include: ['src/**/*.{test,spec}.{js,ts,jsx,tsx}'],
+          exclude: ['src/**/*.e2e.{test,spec}.{js,ts,jsx,tsx}'],
+        },
+      },
+      // Storybook tests configuration
       {
         extends: true,
         plugins: [

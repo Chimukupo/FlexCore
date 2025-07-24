@@ -1,21 +1,52 @@
-// import { useState } from 'react'
-import './App.css'
-import { Button } from "@/components/ui/button"
+import { useState } from 'react';
+import './App.css';
+import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { LoginScreen } from './components/LoginScreen';
+import { SignupScreen } from './components/SignupScreen';
+import { ProfileScreen } from './components/ProfileScreen';
+
+type AuthView = 'login' | 'signup';
+
+const AuthenticatedApp = () => {
+  return <ProfileScreen />;
+};
+
+const UnauthenticatedApp = () => {
+  const [currentView, setCurrentView] = useState<AuthView>('login');
+
+  const switchToSignup = () => setCurrentView('signup');
+  const switchToLogin = () => setCurrentView('login');
+
+  if (currentView === 'signup') {
+    return <SignupScreen onSwitchToLogin={switchToLogin} />;
+  }
+
+  return <LoginScreen onSwitchToSignup={switchToSignup} />;
+};
+
+const AppContent = () => {
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  return user ? <AuthenticatedApp /> : <UnauthenticatedApp />;
+};
 
 function App() {
-  // const [] = useState(0)
-
   return (
-    <>
-      <div className="flex items-top justify-center h-screen bg-gray-100 text-2xl font-semibold text-gray-800">
-        <p>Hello World</p>
-      </div>
-
-      <div className="flex min-h-svh flex-col items-center justify-center">
-        <Button>Click me</Button>
-      </div>
-    </>
-  )
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;
